@@ -4,7 +4,7 @@
 
 ---
 
-We applied transfer learning to binary image classification for malaria detection using the NIH Malaria Cell Images dataset — 27,558 microscopy images of individual red blood cells labeled as either parasitized or uninfected. The real-world motivation is automating the manual slide-screening process used in resource-constrained clinical settings, where a missed infected cell can delay treatment.
+We applied transfer learning to binary image classification for malaria detection using the NIH Malaria Cell Images dataset - 27,558 microscopy images of individual red blood cells labeled as either parasitized or uninfected. The real-world motivation is automating the manual slide-screening process used in resource-constrained clinical settings, where a missed infected cell can delay treatment.
 
 We split the data at the patient level (70/15/15) rather than at the image level to prevent patient-specific artifacts from leaking between train and test, and evaluated three models: a CNN built from scratch, a frozen DeiT-tiny backbone with a new classification head (bottleneck transfer learning), and a partially fine-tuned DeiT-tiny with the last two encoder blocks unfrozen.
 
